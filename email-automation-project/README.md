@@ -1,33 +1,29 @@
-# 📧 Email Automation System (Google Apps Script)
+# 📧 Google Apps Script Email Automation
 
-This is a professional-grade email automation system built using Google Sheets + Apps Script.
+This project automates email sending using Google Sheets and Apps Script. It includes:
+- ✅ Conditional sending (with ON/OFF toggle)
+- 📈 Dashboard with charts (column, line, pie)
+- 🧪 Test mode (no real emails sent)
+- 📎 Attachment support
+- 🧠 Smart preview before sending
 
-## ✅ Features
+## 📂 Files
+- `Code.gs` – All core logic
+- `template.html` – Email body template
 
-- HTML-based email templates
-- Test mode (no actual emails sent)
-- Auto logging (date, name, subject, status)
-- Status toggle system (ON/OFF)
-- Column, Line, and Pie charts for sent email analytics
-- Optional file attachments
+## 🚀 How to Use
+1. Open Google Sheet → Extensions → Apps Script
+2. Paste `Code.gs` and add `template.html`
+3. Add required headers in sheet: Name, Email, Subject, Message, etc.
+4. Use menu: "📧 Email Actions" → "Preview & Send Emails"
+5. View dashboard via "📈 Dashboard Tools"
 
-## 📊 Dashboard Preview
+## 📊 Features
+- Email charts by date/status
+- Auto-toggle OFF after sending
+- Preview option
+- Error logging
 
-- Emails per day (Column + Line Chart)
-- Status breakdown (Pie Chart)
-
-## 🔒 Test Mode
-
-Emails can be previewed without actually sending using `TEST_MODE = true`.
-
-## 🔗 Usage
-
-1. Copy script to Apps Script Editor.
-2. Link Google Sheet with appropriate headers:
-   - Name | Email | Subject | Message | Status | File ID | Last Subject | Last Message | Toggle | Last Sent | Template Name
-
-3. Add your HTML email templates in Apps Script under "HTML".
-
-4. Run `previewAndSendEmails` or use the `📧 Email Actions` menu.
-
-
+## 👨‍💻 Author
+**Tayyab Akbar**  
+GitHub(https://github.com/tayyab-cloud) | LinkedIn(https://www.linkedin.com/in/tayyabaws)
